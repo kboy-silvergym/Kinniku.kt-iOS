@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PersonalSponcerCell" rowHeight="63" id="EzP-pL-hhJ" customClass="PersonalSponsorCell" customModule="kinniku_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EzP-pL-hhJ" id="1A7-SU-fRX">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GnO-Bd-o2j">
+                        <rect key="frame" x="12" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.1843137255" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="7l5-am-W9N"/>
+                            <constraint firstAttribute="height" constant="30" id="EUe-3k-c7Y"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" value="YES">
+                                <string key="keyPath">layer.masksToBounds
+</string>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhT-Jh-L8d">
+                        <rect key="frame" x="52" y="10.5" width="47" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="@kboy">
+                            <color key="titleColor" red="0.98823529409999999" green="0.1843137255" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="screenNameButtonTapped:" destination="EzP-pL-hhJ" eventType="touchUpInside" id="ZO3-fG-jQD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GnO-Bd-o2j" firstAttribute="top" secondItem="1A7-SU-fRX" secondAttribute="top" constant="10" id="bn8-0Z-lBl"/>
+                    <constraint firstItem="fhT-Jh-L8d" firstAttribute="leading" secondItem="GnO-Bd-o2j" secondAttribute="trailing" constant="10" id="pVD-rz-eVu"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GnO-Bd-o2j" secondAttribute="bottom" constant="10" id="qug-bj-q9N"/>
+                    <constraint firstItem="GnO-Bd-o2j" firstAttribute="leading" secondItem="1A7-SU-fRX" secondAttribute="leading" constant="12" id="uSA-gM-MFv"/>
+                    <constraint firstItem="fhT-Jh-L8d" firstAttribute="centerY" secondItem="GnO-Bd-o2j" secondAttribute="centerY" id="w3V-8l-07u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="profileImage" destination="GnO-Bd-o2j" id="jPR-Pt-9f6"/>
+                <outlet property="screenNameButton" destination="fhT-Jh-L8d" id="FZ3-lL-dTc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-6.5"/>
+        </tableViewCell>
+    </objects>
+</document>

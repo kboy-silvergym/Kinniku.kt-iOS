@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yvB-QN-l4K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Host View Controller-->
+        <scene sceneID="a1j-hg-pkb">
+            <objects>
+                <viewController storyboardIdentifier="HostViewController" id="yvB-QN-l4K" customClass="HostViewController" customModule="kinniku_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xHq-df-hN8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="NLS-Cl-Oox"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mic-zh-iHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1234" y="296"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="Yu3-Vb-UR4">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="okW-lv-w02" customClass="SideMenuViewController" customModule="kinniku_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kEn-cU-U9M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DRR-e4-78t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DRR-e4-78t" firstAttribute="leading" secondItem="O87-WD-q1c" secondAttribute="leading" id="82J-YT-8Zy"/>
+                            <constraint firstItem="DRR-e4-78t" firstAttribute="trailing" secondItem="O87-WD-q1c" secondAttribute="trailing" id="aY7-y0-Wi6"/>
+                            <constraint firstItem="DRR-e4-78t" firstAttribute="top" secondItem="O87-WD-q1c" secondAttribute="top" id="bBm-UZ-Yku"/>
+                            <constraint firstItem="DRR-e4-78t" firstAttribute="bottom" secondItem="O87-WD-q1c" secondAttribute="bottom" id="mVa-oC-LGp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O87-WD-q1c"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="DRR-e4-78t" id="O2R-qO-zHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AC2-Ec-BUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="296"/>
+        </scene>
+    </scenes>
+</document>

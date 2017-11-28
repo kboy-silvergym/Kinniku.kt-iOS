@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vp7-e0-j0C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interactive Navigation Controller-->
+        <scene sceneID="7bj-c2-iWX">
+            <objects>
+                <navigationController id="vp7-e0-j0C" customClass="InteractiveNavigationController" customModule="kinniku_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="TWq-U9-pHf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.98823529409999999" green="0.1843137255" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.98823529409999999" green="0.1843137255" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.98823529409999999" green="0.1843137255" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RYh-AB-3SX" kind="relationship" relationship="rootViewController" id="29E-09-yJt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwK-eW-2MJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2039" y="983"/>
+        </scene>
+        <!--スポンサー-->
+        <scene sceneID="QDD-R8-N1i">
+            <objects>
+                <viewController storyboardIdentifier="SponsorListViewController" id="RYh-AB-3SX" customClass="SponsorListViewController" customModule="kinniku_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3de-aQ-64D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kin_orange" translatesAutoresizingMaskIntoConstraints="NO" id="XQM-nL-PIk">
+                                <rect key="frame" x="96" y="171" width="182" height="209"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GU6-HN-DEN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GU6-HN-DEN" firstAttribute="trailing" secondItem="rZF-BK-sSy" secondAttribute="trailing" id="8ku-6f-bLa"/>
+                            <constraint firstItem="XQM-nL-PIk" firstAttribute="centerY" secondItem="3de-aQ-64D" secondAttribute="centerY" id="Djf-fS-k0P"/>
+                            <constraint firstItem="GU6-HN-DEN" firstAttribute="leading" secondItem="rZF-BK-sSy" secondAttribute="leading" id="GzP-ch-jPg"/>
+                            <constraint firstItem="GU6-HN-DEN" firstAttribute="top" secondItem="rZF-BK-sSy" secondAttribute="top" id="JkB-50-SIb"/>
+                            <constraint firstAttribute="bottom" secondItem="GU6-HN-DEN" secondAttribute="bottom" id="Qlu-Vu-f1D"/>
+                            <constraint firstItem="XQM-nL-PIk" firstAttribute="centerX" secondItem="3de-aQ-64D" secondAttribute="centerX" id="vIJ-Cw-m3e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rZF-BK-sSy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="スポンサー" id="paa-cb-0ul">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="bookmarks" id="Cei-cL-tZO">
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="RYh-AB-3SX" id="JIH-Bd-Jfm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="GU6-HN-DEN" id="ape-2e-C0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s40-9w-Aio" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1234" y="983"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kin_orange" width="182" height="209"/>
+    </resources>
+</document>
