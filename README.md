@@ -2,11 +2,17 @@
 
 # KinnikuSwift
 
-This is app for event named "筋肉.swift" in Japan.
+This is an iOS app for event named "筋肉.swift" in Japan.
 
 # About
 
 ## Architecture
 
+MVP lilke.
+
 ## Library
 
+* Firebase Cloud Firestore
+* TwitterKit
+* Unbox
+* ...
