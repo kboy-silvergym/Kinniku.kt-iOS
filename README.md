@@ -12,6 +12,8 @@ MVP lilke.
 
 ## Library
 
+* Firebase Auth
+* Firebase Cloud Messaging
 * Firebase Cloud Firestore
 * TwitterKit
 * Unbox
