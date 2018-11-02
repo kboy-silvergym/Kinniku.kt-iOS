@@ -22,13 +22,13 @@ class CloudFirestore {
         defaultStore
             .collection("Speaker")
             .document(id)
-            .setData(["point": newCount], options: .merge()) { error in
+            .setData(["point": newCount], merge: true) { error in
                 
-            if let error = error {
-                print("Error writing document: \(error)")
-            } else {
-                print("Document successfully written!")
-            }
+                if let error = error {
+                    print("Error writing document: \(error)")
+                } else {
+                    print("Document successfully written!")
+                }
         }
     }
     

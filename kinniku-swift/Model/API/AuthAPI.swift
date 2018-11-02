@@ -16,7 +16,7 @@ class AuthAPI {
     }
     
     static func login(_ completion: @escaping (Error?) -> Void){
-        Twitter.sharedInstance().logIn(completion: { (session, error) in
+        TWTRTwitter.sharedInstance().logIn(completion: { (session, error) in
             
             if let session = session {
                 authFirebase(session, completion: { error in
