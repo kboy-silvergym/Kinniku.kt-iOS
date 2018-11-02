@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B76AF85611EC37D2D6B4F4C /* Pods_kinniku_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9D04552FA3E3C79CCF65B /* Pods_kinniku_swift.framework */; };
+		280D80A8218BCF15008FF06E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284074AA1FB765AA0028CA15 /* Info.plist */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
@@ -571,6 +572,7 @@
 				28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */,
 				28118B821FB9C8C700C72430 /* Schedule.storyboard in Resources */,
 				28EFBE1F1FC9B9BE003E7D43 /* SponcerHeader.xib in Resources */,
+				280D80A8218BCF15008FF06E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
