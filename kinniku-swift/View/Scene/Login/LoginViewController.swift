@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTapped(_ sender: Any) {
         AuthAPI.login({ error in
             UserDefaultsStore.shared.saveRegister()
+            self.gotoMain()
         })
     }
     
