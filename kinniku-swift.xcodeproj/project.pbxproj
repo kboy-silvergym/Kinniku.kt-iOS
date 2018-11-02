@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B76AF85611EC37D2D6B4F4C /* Pods_kinniku_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9D04552FA3E3C79CCF65B /* Pods_kinniku_swift.framework */; };
+		280D80A8218BCF15008FF06E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284074AA1FB765AA0028CA15 /* Info.plist */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
@@ -41,23 +42,12 @@
 		2840749F1FB73DF60028CA15 /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2840749E1FB73DF60028CA15 /* TwitterAPI.swift */; };
 		284074A21FB7637E0028CA15 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074A11FB7637E0028CA15 /* Tweet.swift */; };
 		284074A41FB763B10028CA15 /* TweetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074A31FB763B10028CA15 /* TweetUser.swift */; };
-		284074AB1FB765AA0028CA15 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284074AA1FB765AA0028CA15 /* Info.plist */; };
 		284074AD1FB766780028CA15 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074AC1FB766780028CA15 /* AppConst.swift */; };
-		285E2ED81FCD47FC005350A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285E2ED61FCD47FC005350A6 /* Interface.storyboard */; };
-		285E2EDA1FCD47FC005350A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285E2ED91FCD47FC005350A6 /* Assets.xcassets */; };
-		285E2EE11FCD47FC005350A6 /* kinniku-swift-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 285E2EE01FCD47FC005350A6 /* kinniku-swift-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		285E2EE61FCD47FC005350A6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E2EE51FCD47FC005350A6 /* InterfaceController.swift */; };
-		285E2EE81FCD47FC005350A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E2EE71FCD47FC005350A6 /* ExtensionDelegate.swift */; };
-		285E2EEA1FCD47FC005350A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285E2EE91FCD47FC005350A6 /* NotificationController.swift */; };
-		285E2EEC1FCD47FC005350A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285E2EEB1FCD47FC005350A6 /* Assets.xcassets */; };
-		285E2EF11FCD47FC005350A6 /* kinniku-swift-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 285E2ED41FCD47FC005350A6 /* kinniku-swift-watch.app */; };
 		28CD6C641FB6A92400B9CBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */; };
 		28CD6C661FB6A92400B9CBCD /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C651FB6A92400B9CBCD /* HostViewController.swift */; };
 		28CD6C691FB6A92400B9CBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C671FB6A92400B9CBCD /* Main.storyboard */; };
 		28CD6C6B1FB6A92400B9CBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C6A1FB6A92400B9CBCD /* Assets.xcassets */; };
 		28CD6C6E1FB6A92400B9CBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C6C1FB6A92400B9CBCD /* LaunchScreen.storyboard */; };
-		28CD6C791FB6A92400B9CBCD /* kinniku_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C781FB6A92400B9CBCD /* kinniku_swiftTests.swift */; };
-		28CD6C841FB6A92400B9CBCD /* kinniku_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C831FB6A92400B9CBCD /* kinniku_swiftUITests.swift */; };
 		28E759071FCDBE3E00546002 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759061FCDBE3E00546002 /* LoginPresenter.swift */; };
 		28E759091FCDBF3000546002 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759081FCDBF3000546002 /* MenuPresenter.swift */; };
 		28E7590B1FCDBF9B00546002 /* HostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7590A1FCDBF9B00546002 /* HostPresenter.swift */; };
@@ -86,56 +76,13 @@
 		28FFDF841FC308790063CCFB /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFDF831FC308790063CCFB /* LicenseViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		285E2EE21FCD47FC005350A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28CD6C581FB6A92400B9CBCD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 285E2EDF1FCD47FC005350A6;
-			remoteInfo = "kinniku-swift-watch Extension";
-		};
-		285E2EEF1FCD47FC005350A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28CD6C581FB6A92400B9CBCD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 285E2ED31FCD47FC005350A6;
-			remoteInfo = "kinniku-swift-watch";
-		};
-		28CD6C751FB6A92400B9CBCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28CD6C581FB6A92400B9CBCD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28CD6C5F1FB6A92400B9CBCD;
-			remoteInfo = "kinniku-swift";
-		};
-		28CD6C801FB6A92400B9CBCD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 28CD6C581FB6A92400B9CBCD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 28CD6C5F1FB6A92400B9CBCD;
-			remoteInfo = "kinniku-swift";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		285E2EF71FCD47FC005350A6 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				285E2EE11FCD47FC005350A6 /* kinniku-swift-watch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		285E2EF91FCD47FC005350A6 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				285E2EF11FCD47FC005350A6 /* kinniku-swift-watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,17 +126,6 @@
 		284074A31FB763B10028CA15 /* TweetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetUser.swift; sourceTree = "<group>"; };
 		284074AA1FB765AA0028CA15 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284074AC1FB766780028CA15 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
-		285E2ED41FCD47FC005350A6 /* kinniku-swift-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kinniku-swift-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		285E2ED71FCD47FC005350A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		285E2ED91FCD47FC005350A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		285E2EDB1FCD47FC005350A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		285E2EE01FCD47FC005350A6 /* kinniku-swift-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "kinniku-swift-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		285E2EE51FCD47FC005350A6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		285E2EE71FCD47FC005350A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		285E2EE91FCD47FC005350A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		285E2EEB1FCD47FC005350A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		285E2EED1FCD47FC005350A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		285E2EEE1FCD47FC005350A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		28C2071B1FC45BEB0067ACC8 /* kinniku-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "kinniku-swift.entitlements"; sourceTree = "<group>"; };
 		28CD6C601FB6A92400B9CBCD /* kinniku-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kinniku-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,12 +133,6 @@
 		28CD6C681FB6A92400B9CBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28CD6C6A1FB6A92400B9CBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CD6C6D1FB6A92400B9CBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28CD6C741FB6A92400B9CBCD /* kinniku-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kinniku-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CD6C781FB6A92400B9CBCD /* kinniku_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kinniku_swiftTests.swift; sourceTree = "<group>"; };
-		28CD6C7A1FB6A92400B9CBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28CD6C7F1FB6A92400B9CBCD /* kinniku-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kinniku-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28CD6C831FB6A92400B9CBCD /* kinniku_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kinniku_swiftUITests.swift; sourceTree = "<group>"; };
-		28CD6C851FB6A92400B9CBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28E759061FCDBE3E00546002 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		28E759081FCDBF3000546002 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		28E7590A1FCDBF9B00546002 /* HostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPresenter.swift; sourceTree = "<group>"; };
@@ -236,32 +166,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		285E2EDD1FCD47FC005350A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		28CD6C5D1FB6A92400B9CBCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1B76AF85611EC37D2D6B4F4C /* Pods_kinniku_swift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28CD6C711FB6A92400B9CBCD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28CD6C7C1FB6A92400B9CBCD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,37 +397,10 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		285E2ED51FCD47FC005350A6 /* kinniku-swift-watch */ = {
-			isa = PBXGroup;
-			children = (
-				285E2ED61FCD47FC005350A6 /* Interface.storyboard */,
-				285E2ED91FCD47FC005350A6 /* Assets.xcassets */,
-				285E2EDB1FCD47FC005350A6 /* Info.plist */,
-			);
-			path = "kinniku-swift-watch";
-			sourceTree = "<group>";
-		};
-		285E2EE41FCD47FC005350A6 /* kinniku-swift-watch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				285E2EE51FCD47FC005350A6 /* InterfaceController.swift */,
-				285E2EE71FCD47FC005350A6 /* ExtensionDelegate.swift */,
-				285E2EE91FCD47FC005350A6 /* NotificationController.swift */,
-				285E2EEB1FCD47FC005350A6 /* Assets.xcassets */,
-				285E2EED1FCD47FC005350A6 /* Info.plist */,
-				285E2EEE1FCD47FC005350A6 /* PushNotificationPayload.apns */,
-			);
-			path = "kinniku-swift-watch Extension";
-			sourceTree = "<group>";
-		};
 		28CD6C571FB6A92400B9CBCD = {
 			isa = PBXGroup;
 			children = (
 				28CD6C621FB6A92400B9CBCD /* kinniku-swift */,
-				28CD6C771FB6A92400B9CBCD /* kinniku-swiftTests */,
-				28CD6C821FB6A92400B9CBCD /* kinniku-swiftUITests */,
-				285E2ED51FCD47FC005350A6 /* kinniku-swift-watch */,
-				285E2EE41FCD47FC005350A6 /* kinniku-swift-watch Extension */,
 				A61FEC7E58B6C2CFEFD1B8B0 /* Frameworks */,
 				95AEADBFF1BA93E487B258CA /* Pods */,
 				28CD6C611FB6A92400B9CBCD /* Products */,
@@ -529,10 +411,6 @@
 			isa = PBXGroup;
 			children = (
 				28CD6C601FB6A92400B9CBCD /* kinniku-swift.app */,
-				28CD6C741FB6A92400B9CBCD /* kinniku-swiftTests.xctest */,
-				28CD6C7F1FB6A92400B9CBCD /* kinniku-swiftUITests.xctest */,
-				285E2ED41FCD47FC005350A6 /* kinniku-swift-watch.app */,
-				285E2EE01FCD47FC005350A6 /* kinniku-swift-watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -550,24 +428,6 @@
 				28FFDF801FC304480063CCFB /* Settings.bundle */,
 			);
 			path = "kinniku-swift";
-			sourceTree = "<group>";
-		};
-		28CD6C771FB6A92400B9CBCD /* kinniku-swiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				28CD6C7A1FB6A92400B9CBCD /* Info.plist */,
-				28CD6C781FB6A92400B9CBCD /* kinniku_swiftTests.swift */,
-			);
-			path = "kinniku-swiftTests";
-			sourceTree = "<group>";
-		};
-		28CD6C821FB6A92400B9CBCD /* kinniku-swiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				28CD6C851FB6A92400B9CBCD /* Info.plist */,
-				28CD6C831FB6A92400B9CBCD /* kinniku_swiftUITests.swift */,
-			);
-			path = "kinniku-swiftUITests";
 			sourceTree = "<group>";
 		};
 		28F7D2B31FC9575E009D0AF2 /* Cell */ = {
@@ -623,40 +483,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		285E2ED31FCD47FC005350A6 /* kinniku-swift-watch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 285E2EF81FCD47FC005350A6 /* Build configuration list for PBXNativeTarget "kinniku-swift-watch" */;
-			buildPhases = (
-				285E2ED21FCD47FC005350A6 /* Resources */,
-				285E2EF71FCD47FC005350A6 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				285E2EE31FCD47FC005350A6 /* PBXTargetDependency */,
-			);
-			name = "kinniku-swift-watch";
-			productName = "kinniku-swift-watch";
-			productReference = 285E2ED41FCD47FC005350A6 /* kinniku-swift-watch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		285E2EDF1FCD47FC005350A6 /* kinniku-swift-watch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 285E2EF61FCD47FC005350A6 /* Build configuration list for PBXNativeTarget "kinniku-swift-watch Extension" */;
-			buildPhases = (
-				285E2EDC1FCD47FC005350A6 /* Sources */,
-				285E2EDD1FCD47FC005350A6 /* Frameworks */,
-				285E2EDE1FCD47FC005350A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "kinniku-swift-watch Extension";
-			productName = "kinniku-swift-watch Extension";
-			productReference = 285E2EE01FCD47FC005350A6 /* kinniku-swift-watch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
 		28CD6C5F1FB6A92400B9CBCD /* kinniku-swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28CD6C881FB6A92400B9CBCD /* Build configuration list for PBXNativeTarget "kinniku-swift" */;
@@ -673,48 +499,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				285E2EF01FCD47FC005350A6 /* PBXTargetDependency */,
 			);
 			name = "kinniku-swift";
 			productName = "kinniku-swift";
 			productReference = 28CD6C601FB6A92400B9CBCD /* kinniku-swift.app */;
 			productType = "com.apple.product-type.application";
-		};
-		28CD6C731FB6A92400B9CBCD /* kinniku-swiftTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28CD6C8B1FB6A92400B9CBCD /* Build configuration list for PBXNativeTarget "kinniku-swiftTests" */;
-			buildPhases = (
-				28CD6C701FB6A92400B9CBCD /* Sources */,
-				28CD6C711FB6A92400B9CBCD /* Frameworks */,
-				28CD6C721FB6A92400B9CBCD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				28CD6C761FB6A92400B9CBCD /* PBXTargetDependency */,
-			);
-			name = "kinniku-swiftTests";
-			productName = "kinniku-swiftTests";
-			productReference = 28CD6C741FB6A92400B9CBCD /* kinniku-swiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		28CD6C7E1FB6A92400B9CBCD /* kinniku-swiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 28CD6C8E1FB6A92400B9CBCD /* Build configuration list for PBXNativeTarget "kinniku-swiftUITests" */;
-			buildPhases = (
-				28CD6C7B1FB6A92400B9CBCD /* Sources */,
-				28CD6C7C1FB6A92400B9CBCD /* Frameworks */,
-				28CD6C7D1FB6A92400B9CBCD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				28CD6C811FB6A92400B9CBCD /* PBXTargetDependency */,
-			);
-			name = "kinniku-swiftUITests";
-			productName = "kinniku-swiftUITests";
-			productReference = 28CD6C7F1FB6A92400B9CBCD /* kinniku-swiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -726,14 +515,6 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Barberry Inc.";
 				TargetAttributes = {
-					285E2ED31FCD47FC005350A6 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					285E2EDF1FCD47FC005350A6 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
 					28CD6C5F1FB6A92400B9CBCD = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -745,16 +526,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					28CD6C731FB6A92400B9CBCD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 28CD6C5F1FB6A92400B9CBCD;
-					};
-					28CD6C7E1FB6A92400B9CBCD = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 28CD6C5F1FB6A92400B9CBCD;
 					};
 				};
 			};
@@ -772,37 +543,15 @@
 			projectRoot = "";
 			targets = (
 				28CD6C5F1FB6A92400B9CBCD /* kinniku-swift */,
-				28CD6C731FB6A92400B9CBCD /* kinniku-swiftTests */,
-				28CD6C7E1FB6A92400B9CBCD /* kinniku-swiftUITests */,
-				285E2ED31FCD47FC005350A6 /* kinniku-swift-watch */,
-				285E2EDF1FCD47FC005350A6 /* kinniku-swift-watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		285E2ED21FCD47FC005350A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				285E2EDA1FCD47FC005350A6 /* Assets.xcassets in Resources */,
-				285E2ED81FCD47FC005350A6 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		285E2EDE1FCD47FC005350A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				285E2EEC1FCD47FC005350A6 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		28CD6C5E1FB6A92400B9CBCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				284074AB1FB765AA0028CA15 /* Info.plist in Resources */,
 				28118B881FB9C8EA00C72430 /* AboutApp.storyboard in Resources */,
 				28F7D2C31FC96EDC009D0AF2 /* PersonalSponcerCell.xib in Resources */,
 				28118B7C1FB9B57900C72430 /* GoogleService-Info.plist in Resources */,
@@ -823,20 +572,7 @@
 				28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */,
 				28118B821FB9C8C700C72430 /* Schedule.storyboard in Resources */,
 				28EFBE1F1FC9B9BE003E7D43 /* SponcerHeader.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28CD6C721FB6A92400B9CBCD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28CD6C7D1FB6A92400B9CBCD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				280D80A8218BCF15008FF06E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,12 +588,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-kinniku-swift/Pods-kinniku-swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/InteractiveSideMenu/InteractiveSideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
@@ -868,12 +607,15 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InteractiveSideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
@@ -924,11 +666,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-kinniku-swift/Pods-kinniku-swift-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -938,16 +679,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		285E2EDC1FCD47FC005350A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				285E2EEA1FCD47FC005350A6 /* NotificationController.swift in Sources */,
-				285E2EE81FCD47FC005350A6 /* ExtensionDelegate.swift in Sources */,
-				285E2EE61FCD47FC005350A6 /* InterfaceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		28CD6C5C1FB6A92400B9CBCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1000,56 +731,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		28CD6C701FB6A92400B9CBCD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28CD6C791FB6A92400B9CBCD /* kinniku_swiftTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		28CD6C7B1FB6A92400B9CBCD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28CD6C841FB6A92400B9CBCD /* kinniku_swiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		285E2EE31FCD47FC005350A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 285E2EDF1FCD47FC005350A6 /* kinniku-swift-watch Extension */;
-			targetProxy = 285E2EE21FCD47FC005350A6 /* PBXContainerItemProxy */;
-		};
-		285E2EF01FCD47FC005350A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 285E2ED31FCD47FC005350A6 /* kinniku-swift-watch */;
-			targetProxy = 285E2EEF1FCD47FC005350A6 /* PBXContainerItemProxy */;
-		};
-		28CD6C761FB6A92400B9CBCD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28CD6C5F1FB6A92400B9CBCD /* kinniku-swift */;
-			targetProxy = 28CD6C751FB6A92400B9CBCD /* PBXContainerItemProxy */;
-		};
-		28CD6C811FB6A92400B9CBCD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 28CD6C5F1FB6A92400B9CBCD /* kinniku-swift */;
-			targetProxy = 28CD6C801FB6A92400B9CBCD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		285E2ED61FCD47FC005350A6 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				285E2ED71FCD47FC005350A6 /* Base */,
-			);
-			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
 		28CD6C671FB6A92400B9CBCD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1071,80 +755,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		285E2EF21FCD47FC005350A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				IBSC_MODULE = kinniku_swift_watch_Extension;
-				INFOPLIST_FILE = "kinniku-swift-watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swift.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		285E2EF31FCD47FC005350A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				IBSC_MODULE = kinniku_swift_watch_Extension;
-				INFOPLIST_FILE = "kinniku-swift-watch/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swift.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		285E2EF41FCD47FC005350A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swift-watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swift.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Debug;
-		};
-		285E2EF51FCD47FC005350A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swift-watch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swift.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
-			};
-			name = Release;
-		};
 		28CD6C861FB6A92400B9CBCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1288,93 +898,9 @@
 			};
 			name = Release;
 		};
-		28CD6C8C1FB6A92400B9CBCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kinniku-swift.app/kinniku-swift";
-			};
-			name = Debug;
-		};
-		28CD6C8D1FB6A92400B9CBCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swiftTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kinniku-swift.app/kinniku-swift";
-			};
-			name = Release;
-		};
-		28CD6C8F1FB6A92400B9CBCD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "kinniku-swift";
-			};
-			name = Debug;
-		};
-		28CD6C901FB6A92400B9CBCD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FB6D8X43R8;
-				INFOPLIST_FILE = "kinniku-swiftUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.barberry.kinniku-swiftUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "kinniku-swift";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		285E2EF61FCD47FC005350A6 /* Build configuration list for PBXNativeTarget "kinniku-swift-watch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				285E2EF41FCD47FC005350A6 /* Debug */,
-				285E2EF51FCD47FC005350A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		285E2EF81FCD47FC005350A6 /* Build configuration list for PBXNativeTarget "kinniku-swift-watch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				285E2EF21FCD47FC005350A6 /* Debug */,
-				285E2EF31FCD47FC005350A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		28CD6C5B1FB6A92400B9CBCD /* Build configuration list for PBXProject "kinniku-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1389,24 +915,6 @@
 			buildConfigurations = (
 				28CD6C891FB6A92400B9CBCD /* Debug */,
 				28CD6C8A1FB6A92400B9CBCD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28CD6C8B1FB6A92400B9CBCD /* Build configuration list for PBXNativeTarget "kinniku-swiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28CD6C8C1FB6A92400B9CBCD /* Debug */,
-				28CD6C8D1FB6A92400B9CBCD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		28CD6C8E1FB6A92400B9CBCD /* Build configuration list for PBXNativeTarget "kinniku-swiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				28CD6C8F1FB6A92400B9CBCD /* Debug */,
-				28CD6C901FB6A92400B9CBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

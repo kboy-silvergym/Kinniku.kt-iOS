@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
-        Twitter.sharedInstance().start(withConsumerKey: AppConst.Twitter.consumerKey.rawValue, consumerSecret: AppConst.Twitter.consumerSecret.rawValue)
+        TWTRTwitter.sharedInstance().start(withConsumerKey: AppConst.Twitter.consumerKey.rawValue, consumerSecret: AppConst.Twitter.consumerSecret.rawValue)
         
         // プッシュ通知
         UNUserNotificationCenter.current().delegate = self
@@ -68,7 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let urlString = url.absoluteString
         if urlString.contains("twitter") {
-            return Twitter.sharedInstance().application(app, open: url, options: options)
+            return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
         }
         return true
     }

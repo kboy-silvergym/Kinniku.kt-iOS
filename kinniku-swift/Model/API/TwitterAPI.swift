@@ -26,7 +26,7 @@ class TwitterAPI {
         // MARK: - リクエスト
         let client = TWTRAPIClient()
         let request = client.urlRequest(withMethod: "GET",
-                                        url: endpoint,
+                                        urlString: endpoint,
                                         parameters: params,
                                         error: nil)
         print(request.url)
