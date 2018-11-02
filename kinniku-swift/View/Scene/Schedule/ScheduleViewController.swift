@@ -10,8 +10,6 @@ import UIKit
 import InteractiveSideMenu
 
 class ScheduleViewController: UIViewController {
-    let presenter = SchedulePresenter()
-    
     @IBOutlet weak var tableView: UITableView!
     
     var events: [Event] = []
@@ -26,8 +24,7 @@ class ScheduleViewController: UIViewController {
         let nib = UINib(nibName: String(describing: EventCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: String(describing: EventCell.self))
         
-        presenter.getEvent({ error, events in
-            
+        CloudFirestore().getEvent({ error, events in
             if let error = error {
                 print(error.localizedDescription)
                 return

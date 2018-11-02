@@ -11,12 +11,12 @@ import InteractiveSideMenu
 import SafariServices
 
 class SponsorListViewController: UIViewController {
-    let presenter = SponsorListPresenter()
-    
     @IBOutlet weak var tableView: UITableView!
     
     var sponsors: [Sponsor] = []
     var personalSponsors: [PersonalSponsor] = []
+    
+    let firestore = CloudFirestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class SponsorListViewController: UIViewController {
     }
     
     func getSponsor(){
-        presenter.getSponsor({ error, sponsors in
+        firestore.getSponsor({ error, sponsors in
             
             if let error = error {
                 print(error.localizedDescription)
@@ -50,7 +50,7 @@ class SponsorListViewController: UIViewController {
     }
     
     func getPersonalSponsor(){
-        presenter.getPersonalSponsor({ error, sponsors in
+        firestore.getPersonalSponsor({ error, sponsors in
             
             if let error = error {
                 print(error.localizedDescription)
