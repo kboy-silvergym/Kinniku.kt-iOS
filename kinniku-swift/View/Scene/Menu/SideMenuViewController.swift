@@ -10,7 +10,12 @@ import UIKit
 import InteractiveSideMenu
 
 class SideMenuViewController: MenuViewController {
-    let presenter = MenuPresenter()
+    let menuStrings: [String] = ["筋肉.swift",
+                                 "タイムライン",
+                                 "スケジュール",
+                                 "スピーカー",
+                                 "スポンサー様",
+                                 "このアプリについて"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,7 +38,7 @@ class SideMenuViewController: MenuViewController {
 extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.menuStrings.count
+        return menuStrings.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -44,7 +49,7 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         }
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         cell.selectionStyle = .none
-        cell.textLabel?.text = presenter.menuStrings[indexPath.row]
+        cell.textLabel?.text = menuStrings[indexPath.row]
         cell.textLabel?.textColor = UIColor.theme
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
         return cell

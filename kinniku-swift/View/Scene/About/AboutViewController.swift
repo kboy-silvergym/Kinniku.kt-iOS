@@ -11,8 +11,6 @@ import InteractiveSideMenu
 import WebKit
 
 class AboutViewController: UIViewController {
-    let presenter = AboutPresenter()
-    
     lazy var webView: WKWebView! = WKWebView()
 
     override func loadView() {
@@ -22,7 +20,13 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.load(presenter.getRequest())
+        webView.load(getRequest())
+    }
+    
+    private func getRequest() -> URLRequest {
+        let url = URL(string: "https://kinniku-swift.connpass.com/event/69438/")
+        let request = URLRequest(url: url!)
+        return request
     }
 
     @IBAction func menuButtonTapped(_ sender: Any) {

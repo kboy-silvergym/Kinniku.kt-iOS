@@ -9,10 +9,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    let presenter = LoginPresenter()
-
     @IBAction func loginButtonTapped(_ sender: Any) {
-        presenter.login({ error in
+        AuthAPI.login({ error in
+            UserDefaultsStore.shared.saveRegister()
             self.gotoMain()
         })
     }

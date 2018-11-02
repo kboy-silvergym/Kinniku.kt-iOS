@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1B76AF85611EC37D2D6B4F4C /* Pods_kinniku_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9D04552FA3E3C79CCF65B /* Pods_kinniku_swift.framework */; };
-		280D80A8218BCF15008FF06E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 284074AA1FB765AA0028CA15 /* Info.plist */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
@@ -48,17 +47,9 @@
 		28CD6C691FB6A92400B9CBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C671FB6A92400B9CBCD /* Main.storyboard */; };
 		28CD6C6B1FB6A92400B9CBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C6A1FB6A92400B9CBCD /* Assets.xcassets */; };
 		28CD6C6E1FB6A92400B9CBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C6C1FB6A92400B9CBCD /* LaunchScreen.storyboard */; };
-		28E759071FCDBE3E00546002 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759061FCDBE3E00546002 /* LoginPresenter.swift */; };
-		28E759091FCDBF3000546002 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759081FCDBF3000546002 /* MenuPresenter.swift */; };
-		28E7590B1FCDBF9B00546002 /* HostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7590A1FCDBF9B00546002 /* HostPresenter.swift */; };
-		28E7590D1FCDC0FC00546002 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7590C1FCDC0FC00546002 /* AboutPresenter.swift */; };
-		28E7590F1FCDC1AE00546002 /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E7590E1FCDC1AE00546002 /* FeedPresenter.swift */; };
-		28E759111FCDC32600546002 /* SchedulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759101FCDC32600546002 /* SchedulePresenter.swift */; };
-		28E759131FCDC40400546002 /* SpeakerListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759121FCDC40400546002 /* SpeakerListPresenter.swift */; };
-		28E759151FCDC7D700546002 /* SponsorListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E759141FCDC7D700546002 /* SponsorListPresenter.swift */; };
 		28EFBE1B1FC9AA55003E7D43 /* PersonalSponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE1A1FC9AA55003E7D43 /* PersonalSponsor.swift */; };
 		28EFBE1E1FC9B9BE003E7D43 /* SponsorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EFBE1C1FC9B9BE003E7D43 /* SponsorHeader.swift */; };
-		28EFBE1F1FC9B9BE003E7D43 /* SponcerHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE1D1FC9B9BE003E7D43 /* SponcerHeader.xib */; };
+		28EFBE1F1FC9B9BE003E7D43 /* SponsorHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28EFBE1D1FC9B9BE003E7D43 /* SponsorHeader.xib */; };
 		28F7D2AC1FC944FB009D0AF2 /* CloudFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2AB1FC944FB009D0AF2 /* CloudFirestore.swift */; };
 		28F7D2AE1FC9494F009D0AF2 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2AD1FC9494F009D0AF2 /* Speaker.swift */; };
 		28F7D2B01FC9495C009D0AF2 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2AF1FC9495C009D0AF2 /* Sponsor.swift */; };
@@ -66,10 +57,10 @@
 		28F7D2B61FC957AA009D0AF2 /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2B41FC957AA009D0AF2 /* SpeakerCell.swift */; };
 		28F7D2B71FC957AA009D0AF2 /* SpeakerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2B51FC957AA009D0AF2 /* SpeakerCell.xib */; };
 		28F7D2BA1FC968F4009D0AF2 /* SponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2B81FC968F4009D0AF2 /* SponsorCell.swift */; };
-		28F7D2BB1FC968F4009D0AF2 /* SponcerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2B91FC968F4009D0AF2 /* SponcerCell.xib */; };
+		28F7D2BB1FC968F4009D0AF2 /* SponsorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2B91FC968F4009D0AF2 /* SponsorCell.xib */; };
 		28F7D2C01FC96AC9009D0AF2 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2BE1FC96AC9009D0AF2 /* EventCell.swift */; };
 		28F7D2C11FC96AC9009D0AF2 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2BF1FC96AC9009D0AF2 /* EventCell.xib */; };
-		28F7D2C31FC96EDC009D0AF2 /* PersonalSponcerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2C21FC96EDC009D0AF2 /* PersonalSponcerCell.xib */; };
+		28F7D2C31FC96EDC009D0AF2 /* PersonalSponsorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F7D2C21FC96EDC009D0AF2 /* PersonalSponsorCell.xib */; };
 		28F7D2C51FC96F5A009D0AF2 /* PersonalSponsorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F7D2C41FC96F5A009D0AF2 /* PersonalSponsorCell.swift */; };
 		28FFDF7F1FC2FE010063CCFB /* AcknowledgementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFDF7E1FC2FE010063CCFB /* AcknowledgementsViewController.swift */; };
 		28FFDF811FC304490063CCFB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28FFDF801FC304480063CCFB /* Settings.bundle */; };
@@ -133,17 +124,9 @@
 		28CD6C681FB6A92400B9CBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28CD6C6A1FB6A92400B9CBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28CD6C6D1FB6A92400B9CBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28E759061FCDBE3E00546002 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		28E759081FCDBF3000546002 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
-		28E7590A1FCDBF9B00546002 /* HostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostPresenter.swift; sourceTree = "<group>"; };
-		28E7590C1FCDC0FC00546002 /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
-		28E7590E1FCDC1AE00546002 /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
-		28E759101FCDC32600546002 /* SchedulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePresenter.swift; sourceTree = "<group>"; };
-		28E759121FCDC40400546002 /* SpeakerListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerListPresenter.swift; sourceTree = "<group>"; };
-		28E759141FCDC7D700546002 /* SponsorListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorListPresenter.swift; sourceTree = "<group>"; };
 		28EFBE1A1FC9AA55003E7D43 /* PersonalSponsor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalSponsor.swift; sourceTree = "<group>"; };
 		28EFBE1C1FC9B9BE003E7D43 /* SponsorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorHeader.swift; sourceTree = "<group>"; };
-		28EFBE1D1FC9B9BE003E7D43 /* SponcerHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponcerHeader.xib; sourceTree = "<group>"; };
+		28EFBE1D1FC9B9BE003E7D43 /* SponsorHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsorHeader.xib; sourceTree = "<group>"; };
 		28F7D2AB1FC944FB009D0AF2 /* CloudFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFirestore.swift; sourceTree = "<group>"; };
 		28F7D2AD1FC9494F009D0AF2 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		28F7D2AF1FC9495C009D0AF2 /* Sponsor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
@@ -151,10 +134,10 @@
 		28F7D2B41FC957AA009D0AF2 /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
 		28F7D2B51FC957AA009D0AF2 /* SpeakerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeakerCell.xib; sourceTree = "<group>"; };
 		28F7D2B81FC968F4009D0AF2 /* SponsorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorCell.swift; sourceTree = "<group>"; };
-		28F7D2B91FC968F4009D0AF2 /* SponcerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponcerCell.xib; sourceTree = "<group>"; };
+		28F7D2B91FC968F4009D0AF2 /* SponsorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SponsorCell.xib; sourceTree = "<group>"; };
 		28F7D2BE1FC96AC9009D0AF2 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		28F7D2BF1FC96AC9009D0AF2 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
-		28F7D2C21FC96EDC009D0AF2 /* PersonalSponcerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalSponcerCell.xib; sourceTree = "<group>"; };
+		28F7D2C21FC96EDC009D0AF2 /* PersonalSponsorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalSponsorCell.xib; sourceTree = "<group>"; };
 		28F7D2C41FC96F5A009D0AF2 /* PersonalSponsorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalSponsorCell.swift; sourceTree = "<group>"; };
 		28FFDF7E1FC2FE010063CCFB /* AcknowledgementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowledgementsViewController.swift; sourceTree = "<group>"; };
 		28FFDF801FC304480063CCFB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -228,7 +211,6 @@
 			children = (
 				28118A491FB76CE800C72430 /* Login.storyboard */,
 				284074941FB730A30028CA15 /* LoginViewController.swift */,
-				28E759061FCDBE3E00546002 /* LoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -239,7 +221,6 @@
 				28118B381FB8020300C72430 /* Cell */,
 				28118B601FB87E5800C72430 /* Feed.storyboard */,
 				2840748F1FB7259D0028CA15 /* FeedViewController.swift */,
-				28E7590E1FCDC1AE00546002 /* FeedPresenter.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -248,7 +229,6 @@
 			isa = PBXGroup;
 			children = (
 				28CD6C651FB6A92400B9CBCD /* HostViewController.swift */,
-				28E7590A1FCDBF9B00546002 /* HostPresenter.swift */,
 			);
 			path = Host;
 			sourceTree = "<group>";
@@ -258,7 +238,6 @@
 			children = (
 				28118B8E1FB9D59D00C72430 /* Cell */,
 				2840748B1FB7128A0028CA15 /* SideMenuViewController.swift */,
-				28E759081FCDBF3000546002 /* MenuPresenter.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -269,7 +248,6 @@
 				28F7D2B31FC9575E009D0AF2 /* Cell */,
 				28118B831FB9C8D100C72430 /* SpeakerList.storyboard */,
 				284074981FB730DB0028CA15 /* SpeakerListViewController.swift */,
-				28E759121FCDC40400546002 /* SpeakerListPresenter.swift */,
 			);
 			path = SpeakerList;
 			sourceTree = "<group>";
@@ -279,7 +257,6 @@
 			children = (
 				28118B7F1FB9C8B800C72430 /* About.storyboard */,
 				2840749A1FB730E50028CA15 /* AboutViewController.swift */,
-				28E7590C1FCDC0FC00546002 /* AboutPresenter.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -301,7 +278,6 @@
 				28F7D2BC1FC968F9009D0AF2 /* Cell */,
 				28118B851FB9C8DE00C72430 /* SponsorList.storyboard */,
 				28118B751FB8CF2000C72430 /* SponsorListViewController.swift */,
-				28E759141FCDC7D700546002 /* SponsorListPresenter.swift */,
 			);
 			path = SponsorList;
 			sourceTree = "<group>";
@@ -312,7 +288,6 @@
 				28F7D2BD1FC96AB4009D0AF2 /* Cell */,
 				28118B811FB9C8C700C72430 /* Schedule.storyboard */,
 				28118B731FB8CF0900C72430 /* ScheduleViewController.swift */,
-				28E759101FCDC32600546002 /* SchedulePresenter.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -443,11 +418,11 @@
 			isa = PBXGroup;
 			children = (
 				28F7D2B81FC968F4009D0AF2 /* SponsorCell.swift */,
-				28F7D2B91FC968F4009D0AF2 /* SponcerCell.xib */,
+				28F7D2B91FC968F4009D0AF2 /* SponsorCell.xib */,
 				28F7D2C41FC96F5A009D0AF2 /* PersonalSponsorCell.swift */,
-				28F7D2C21FC96EDC009D0AF2 /* PersonalSponcerCell.xib */,
+				28F7D2C21FC96EDC009D0AF2 /* PersonalSponsorCell.xib */,
 				28EFBE1C1FC9B9BE003E7D43 /* SponsorHeader.swift */,
-				28EFBE1D1FC9B9BE003E7D43 /* SponcerHeader.xib */,
+				28EFBE1D1FC9B9BE003E7D43 /* SponsorHeader.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -553,14 +528,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28118B881FB9C8EA00C72430 /* AboutApp.storyboard in Resources */,
-				28F7D2C31FC96EDC009D0AF2 /* PersonalSponcerCell.xib in Resources */,
+				28F7D2C31FC96EDC009D0AF2 /* PersonalSponsorCell.xib in Resources */,
 				28118B7C1FB9B57900C72430 /* GoogleService-Info.plist in Resources */,
 				28118B8D1FB9D32A00C72430 /* ComingSoonCell.xib in Resources */,
 				28118B611FB87E5800C72430 /* Feed.storyboard in Resources */,
 				28118B841FB9C8D100C72430 /* SpeakerList.storyboard in Resources */,
 				28CD6C6E1FB6A92400B9CBCD /* LaunchScreen.storyboard in Resources */,
 				28CD6C6B1FB6A92400B9CBCD /* Assets.xcassets in Resources */,
-				28F7D2BB1FC968F4009D0AF2 /* SponcerCell.xib in Resources */,
+				28F7D2BB1FC968F4009D0AF2 /* SponsorCell.xib in Resources */,
 				28FFDF811FC304490063CCFB /* Settings.bundle in Resources */,
 				28118B801FB9C8B800C72430 /* About.storyboard in Resources */,
 				28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */,
@@ -571,8 +546,7 @@
 				28F7D2B71FC957AA009D0AF2 /* SpeakerCell.xib in Resources */,
 				28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */,
 				28118B821FB9C8C700C72430 /* Schedule.storyboard in Resources */,
-				28EFBE1F1FC9B9BE003E7D43 /* SponcerHeader.xib in Resources */,
-				280D80A8218BCF15008FF06E /* Info.plist in Resources */,
+				28EFBE1F1FC9B9BE003E7D43 /* SponsorHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,37 +657,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E759131FCDC40400546002 /* SpeakerListPresenter.swift in Sources */,
 				28118B5D1FB84B7F00C72430 /* TweetMedia.swift in Sources */,
 				28118B631FB8AA2C00C72430 /* InteractiveNavigationController.swift in Sources */,
 				28F7D2C51FC96F5A009D0AF2 /* PersonalSponsorCell.swift in Sources */,
 				284074991FB730DB0028CA15 /* SpeakerListViewController.swift in Sources */,
-				28E759071FCDBE3E00546002 /* LoginPresenter.swift in Sources */,
 				28118B741FB8CF0900C72430 /* ScheduleViewController.swift in Sources */,
 				284074A21FB7637E0028CA15 /* Tweet.swift in Sources */,
 				28118B911FB9D5B000C72430 /* AboutCell.swift in Sources */,
 				28118B951FB9E2EA00C72430 /* UserDefaultsStore.swift in Sources */,
 				28CD6C661FB6A92400B9CBCD /* HostViewController.swift in Sources */,
 				28118B671FB8C35400C72430 /* Results.swift in Sources */,
-				28E759091FCDBF3000546002 /* MenuPresenter.swift in Sources */,
 				2840748C1FB7128A0028CA15 /* SideMenuViewController.swift in Sources */,
 				284074901FB7259D0028CA15 /* FeedViewController.swift in Sources */,
 				28FFDF7F1FC2FE010063CCFB /* AcknowledgementsViewController.swift in Sources */,
 				28EFBE1E1FC9B9BE003E7D43 /* SponsorHeader.swift in Sources */,
 				28F7D2B01FC9495C009D0AF2 /* Sponsor.swift in Sources */,
 				28EFBE1B1FC9AA55003E7D43 /* PersonalSponsor.swift in Sources */,
-				28E7590D1FCDC0FC00546002 /* AboutPresenter.swift in Sources */,
 				28F7D2B21FC94973009D0AF2 /* Event.swift in Sources */,
 				284074951FB730A30028CA15 /* LoginViewController.swift in Sources */,
 				2840749B1FB730E50028CA15 /* AboutViewController.swift in Sources */,
 				284074A41FB763B10028CA15 /* TweetUser.swift in Sources */,
-				28E759151FCDC7D700546002 /* SponsorListPresenter.swift in Sources */,
 				28118B761FB8CF2000C72430 /* SponsorListViewController.swift in Sources */,
 				28118B7A1FB9AF4500C72430 /* AuthAPI.swift in Sources */,
 				28118B8C1FB9D32A00C72430 /* ComingSoonCell.swift in Sources */,
 				28F7D2AE1FC9494F009D0AF2 /* Speaker.swift in Sources */,
 				284074AD1FB766780028CA15 /* AppConst.swift in Sources */,
-				28E759111FCDC32600546002 /* SchedulePresenter.swift in Sources */,
 				28F7D2C01FC96AC9009D0AF2 /* EventCell.swift in Sources */,
 				28118B651FB8AC7000C72430 /* ColorExtension.swift in Sources */,
 				28F7D2B61FC957AA009D0AF2 /* SpeakerCell.swift in Sources */,
@@ -723,10 +691,8 @@
 				28FFDF841FC308790063CCFB /* LicenseViewController.swift in Sources */,
 				2840749F1FB73DF60028CA15 /* TwitterAPI.swift in Sources */,
 				28118B781FB8CF3200C72430 /* AboutAppViewController.swift in Sources */,
-				28E7590B1FCDBF9B00546002 /* HostPresenter.swift in Sources */,
 				28F7D2BA1FC968F4009D0AF2 /* SponsorCell.swift in Sources */,
 				28118B7E1FB9BF1000C72430 /* StringExtension.swift in Sources */,
-				28E7590F1FCDC1AE00546002 /* FeedPresenter.swift in Sources */,
 				28CD6C641FB6A92400B9CBCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

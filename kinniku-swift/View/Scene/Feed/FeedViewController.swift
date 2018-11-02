@@ -10,9 +10,8 @@ import UIKit
 import InteractiveSideMenu
 
 class FeedViewController: UIViewController {
-    let presenter = FeedPresenter()
-    
     @IBOutlet weak var tableView: UITableView!
+    
     var refreshControl: UIRefreshControl?
     
     var tweets: [Tweet] = []
@@ -38,15 +37,26 @@ class FeedViewController: UIViewController {
     }
     
     func getTweet(){
-        presenter.getTweet({ tweets in
-            self.tweets = tweets
+        TwitterAPI.getTweet({ results in
+            self.tweets = results?.tweets ?? []
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
         })
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        presenter.showTweetComposer(self)
+        showTweetComposer(self)
+    }
+    
+    func showTweetComposer(_ vc: UIViewController){
+        TwitterAPI.showTweetComposer(fromVC: vc, completion: { result in
+            switch result {
+            case .done:
+                break
+            case .cancelled:
+                break
+            }
+        })
     }
     
     @IBAction func menuButtonTapped(_ sender: Any) {

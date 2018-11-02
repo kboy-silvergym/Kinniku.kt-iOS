@@ -12,7 +12,7 @@ class TwitterAPI {
     
     static func getTweet(sinceId: String? = nil, _ completed: @escaping (Results?) -> Void){
         let endpoint = "https://api.twitter.com/1.1/search/tweets.json"
-        let keyword = "#筋肉swift"
+        let keyword = "#筋肉kt"
         
         // MARK: - param作成
         var params: [String: String] = [:]
@@ -42,7 +42,7 @@ class TwitterAPI {
     
     static func showTweetComposer(fromVC: UIViewController, completion: @escaping (TWTRComposerResult) -> Void){
         let composer = TWTRComposer()
-        composer.setText("\n\n#筋肉swift")
+        composer.setText("\n\n#筋肉kt")
         composer.show(from: fromVC) { result in
             completion(result)
         }
