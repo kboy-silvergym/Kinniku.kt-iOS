@@ -14,6 +14,7 @@
 		280D80B6218DE2ED008FF06E /* LogoGStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */; };
 		280D80B7218DE2ED008FF06E /* LogoGStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */; };
 		280D80B9218DE3A7008FF06E /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80B8218DE3A7008FF06E /* FontExtension.swift */; };
+		280D80BB218DEC93008FF06E /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80BA218DEC93008FF06E /* UILabelExtension.swift */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
@@ -94,6 +95,7 @@
 		280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Bold.otf"; sourceTree = "<group>"; };
 		280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Light.otf"; sourceTree = "<group>"; };
 		280D80B8218DE3A7008FF06E /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		280D80BA218DEC93008FF06E /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		28118A491FB76CE800C72430 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		28118B391FB8022F00C72430 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 		28118B3B1FB8025700C72430 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				28118B641FB8AC7000C72430 /* ColorExtension.swift */,
 				28118B7D1FB9BF1000C72430 /* StringExtension.swift */,
 				280D80B8218DE3A7008FF06E /* FontExtension.swift */,
+				280D80BA218DEC93008FF06E /* UILabelExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -705,6 +708,7 @@
 				28118B7A1FB9AF4500C72430 /* AuthAPI.swift in Sources */,
 				28118B8C1FB9D32A00C72430 /* ComingSoonCell.swift in Sources */,
 				28F7D2AE1FC9494F009D0AF2 /* Speaker.swift in Sources */,
+				280D80BB218DEC93008FF06E /* UILabelExtension.swift in Sources */,
 				284074AD1FB766780028CA15 /* AppConst.swift in Sources */,
 				28F7D2C01FC96AC9009D0AF2 /* EventCell.swift in Sources */,
 				28118B651FB8AC7000C72430 /* ColorExtension.swift in Sources */,

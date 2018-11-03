@@ -33,6 +33,7 @@ class EventCell: UITableViewCell {
             timeLabel.text = event?.time
             titleLabel.text = event?.title
             detailLabel.text = event?.description
+            detailLabel.setLineSpacing(lineSpacing: 6)
         }
     }
 }

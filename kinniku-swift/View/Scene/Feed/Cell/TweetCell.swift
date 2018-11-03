@@ -41,6 +41,7 @@ class TweetCell: UITableViewCell {
         didSet{
             guard let tweet = tweet else { return }
             tweetText.text = tweet.text
+            tweetText.setLineSpacing(lineSpacing: 6)
             
             // 3日前などのフォーマットに変換
             let dateSpan = tweet
