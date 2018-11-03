@@ -22,20 +22,24 @@ extension UIColor {
         )
     }
     
-    static var theme: UIColor {
-        return UIColor(rgb: 0xFC2F23)
+    static var themeBlack: UIColor {
+        return UIColor(rgb: 0x2b2b2b)
     }
     
-    static var themeMiddle: UIColor {
-        return UIColor(rgb: 0xff00b8)
+    static var themePurple: UIColor {
+        return UIColor(rgb: 0x493293)
     }
     
-    static var themeLight: UIColor {
-        return UIColor(rgb: 0xffd400)
+    static var themeNavy: UIColor {
+        return UIColor(rgb: 0x346ea6)
     }
     
-    static var clearWhite: UIColor {
-        return UIColor(rgb: 0xffffff, alpha: 0.5)
+    static var themeOrange: UIColor {
+        return UIColor(rgb: 0xfe8812)
+    }
+    
+    static var themePink: UIColor {
+        return UIColor(rgb: 0xf43c98)
     }
 }
 

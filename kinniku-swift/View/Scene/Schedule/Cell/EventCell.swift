@@ -9,10 +9,21 @@
 import UIKit
 
 class EventCell: UITableViewCell {
-
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel! {
+        didSet {
+            timeLabel.textColor = UIColor.white
+        }
+    }
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            titleLabel.textColor = UIColor.themeBlack
+        }
+    }
+    @IBOutlet weak var detailLabel: UILabel! {
+        didSet {
+            detailLabel.textColor = UIColor.gray
+        }
+    }
     
     var event: Event? {
         didSet{
@@ -21,16 +32,4 @@ class EventCell: UITableViewCell {
             detailLabel.text = event?.description
         }
     }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

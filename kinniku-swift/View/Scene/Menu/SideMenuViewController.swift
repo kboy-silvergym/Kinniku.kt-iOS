@@ -10,7 +10,7 @@ import UIKit
 import InteractiveSideMenu
 
 class SideMenuViewController: MenuViewController {
-    let menuStrings: [String] = ["筋肉.swift",
+    let menuStrings: [String] = ["筋肉.kt",
                                  "タイムライン",
                                  "スケジュール",
                                  "スピーカー",
@@ -50,7 +50,7 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         cell.selectionStyle = .none
         cell.textLabel?.text = menuStrings[indexPath.row]
-        cell.textLabel?.textColor = UIColor.theme
+        cell.textLabel?.textColor = UIColor.themePurple
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
         return cell
     }

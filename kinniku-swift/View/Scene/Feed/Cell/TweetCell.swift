@@ -10,12 +10,28 @@ import UIKit
 import SDWebImage
 
 class TweetCell: UITableViewCell {
-    @IBOutlet weak var userNameText: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var tweetText: UILabel!
-    @IBOutlet weak var dateText: UILabel!
     @IBOutlet weak var contentImageView: UIImageView!
-    @IBOutlet weak var screenNameButton: UIButton!
+    @IBOutlet weak var userNameText: UILabel! {
+        didSet {
+            userNameText.textColor = .themeBlack
+        }
+    }
+    @IBOutlet weak var tweetText: UILabel! {
+        didSet {
+            tweetText.textColor = .themeBlack
+        }
+    }
+    @IBOutlet weak var dateText: UILabel! {
+        didSet {
+            dateText.textColor = .themeBlack
+        }
+    }
+    @IBOutlet weak var screenNameButton: UIButton! {
+        didSet {
+            screenNameButton.setTitleColor(.themeNavy, for: .normal)
+        }
+    }
     
     var tweet: Tweet? {
         didSet{
