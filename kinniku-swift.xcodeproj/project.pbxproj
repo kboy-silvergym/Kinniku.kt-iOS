@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1B76AF85611EC37D2D6B4F4C /* Pods_kinniku_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9D04552FA3E3C79CCF65B /* Pods_kinniku_swift.framework */; };
+		280D80B3218DE2ED008FF06E /* LogoGStd-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80AE218DE2EC008FF06E /* LogoGStd-Ultra.otf */; };
+		280D80B4218DE2ED008FF06E /* LogoGStd-Extra.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80AF218DE2EC008FF06E /* LogoGStd-Extra.otf */; };
+		280D80B5218DE2ED008FF06E /* LogoGStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B0218DE2ED008FF06E /* LogoGStd-Medium.otf */; };
+		280D80B6218DE2ED008FF06E /* LogoGStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */; };
+		280D80B7218DE2ED008FF06E /* LogoGStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */; };
+		280D80B9218DE3A7008FF06E /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80B8218DE3A7008FF06E /* FontExtension.swift */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
@@ -82,6 +88,12 @@
 
 /* Begin PBXFileReference section */
 		275772895DC9C7A98C70FD5B /* Pods_kinniku_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kinniku_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280D80AE218DE2EC008FF06E /* LogoGStd-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Ultra.otf"; sourceTree = "<group>"; };
+		280D80AF218DE2EC008FF06E /* LogoGStd-Extra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Extra.otf"; sourceTree = "<group>"; };
+		280D80B0218DE2ED008FF06E /* LogoGStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Medium.otf"; sourceTree = "<group>"; };
+		280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Bold.otf"; sourceTree = "<group>"; };
+		280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Light.otf"; sourceTree = "<group>"; };
+		280D80B8218DE3A7008FF06E /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		28118A491FB76CE800C72430 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		28118B391FB8022F00C72430 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 		28118B3B1FB8025700C72430 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
@@ -160,6 +172,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280D80AD218DE2D7008FF06E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */,
+				280D80AF218DE2EC008FF06E /* LogoGStd-Extra.otf */,
+				280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */,
+				280D80B0218DE2ED008FF06E /* LogoGStd-Medium.otf */,
+				280D80AE218DE2EC008FF06E /* LogoGStd-Ultra.otf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		28118B381FB8020300C72430 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +199,7 @@
 				28118B3E1FB8038D00C72430 /* DateExtension.swift */,
 				28118B641FB8AC7000C72430 /* ColorExtension.swift */,
 				28118B7D1FB9BF1000C72430 /* StringExtension.swift */,
+				280D80B8218DE3A7008FF06E /* FontExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -353,16 +378,6 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		284074A61FB7641F0028CA15 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				28118B3D1FB8037500C72430 /* Utils */,
-				28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */,
-				284074AC1FB766780028CA15 /* AppConst.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		284074A81FB764A10028CA15 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,10 +408,13 @@
 		28CD6C621FB6A92400B9CBCD /* kinniku-swift */ = {
 			isa = PBXGroup;
 			children = (
+				284074AC1FB766780028CA15 /* AppConst.swift */,
+				28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */,
 				28C2071B1FC45BEB0067ACC8 /* kinniku-swift.entitlements */,
-				284074A61FB7641F0028CA15 /* Common */,
 				284074A81FB764A10028CA15 /* View */,
 				2840749C1FB730F20028CA15 /* Model */,
+				280D80AD218DE2D7008FF06E /* Resource */,
+				28118B3D1FB8037500C72430 /* Utils */,
 				28CD6C6A1FB6A92400B9CBCD /* Assets.xcassets */,
 				284074AA1FB765AA0028CA15 /* Info.plist */,
 				28118B7B1FB9B57900C72430 /* GoogleService-Info.plist */,
@@ -530,18 +548,23 @@
 				28118B881FB9C8EA00C72430 /* AboutApp.storyboard in Resources */,
 				28F7D2C31FC96EDC009D0AF2 /* PersonalSponsorCell.xib in Resources */,
 				28118B7C1FB9B57900C72430 /* GoogleService-Info.plist in Resources */,
+				280D80B7218DE2ED008FF06E /* LogoGStd-Light.otf in Resources */,
 				28118B8D1FB9D32A00C72430 /* ComingSoonCell.xib in Resources */,
 				28118B611FB87E5800C72430 /* Feed.storyboard in Resources */,
+				280D80B5218DE2ED008FF06E /* LogoGStd-Medium.otf in Resources */,
 				28118B841FB9C8D100C72430 /* SpeakerList.storyboard in Resources */,
 				28CD6C6E1FB6A92400B9CBCD /* LaunchScreen.storyboard in Resources */,
 				28CD6C6B1FB6A92400B9CBCD /* Assets.xcassets in Resources */,
+				280D80B6218DE2ED008FF06E /* LogoGStd-Bold.otf in Resources */,
 				28F7D2BB1FC968F4009D0AF2 /* SponsorCell.xib in Resources */,
+				280D80B4218DE2ED008FF06E /* LogoGStd-Extra.otf in Resources */,
 				28FFDF811FC304490063CCFB /* Settings.bundle in Resources */,
 				28118B801FB9C8B800C72430 /* About.storyboard in Resources */,
 				28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */,
 				28CD6C691FB6A92400B9CBCD /* Main.storyboard in Resources */,
 				28118B861FB9C8DE00C72430 /* SponsorList.storyboard in Resources */,
 				28118B921FB9D5B000C72430 /* AboutCell.xib in Resources */,
+				280D80B3218DE2ED008FF06E /* LogoGStd-Ultra.otf in Resources */,
 				28F7D2C11FC96AC9009D0AF2 /* EventCell.xib in Resources */,
 				28F7D2B71FC957AA009D0AF2 /* SpeakerCell.xib in Resources */,
 				28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */,
@@ -663,6 +686,7 @@
 				284074991FB730DB0028CA15 /* SpeakerListViewController.swift in Sources */,
 				28118B741FB8CF0900C72430 /* ScheduleViewController.swift in Sources */,
 				284074A21FB7637E0028CA15 /* Tweet.swift in Sources */,
+				280D80B9218DE3A7008FF06E /* FontExtension.swift in Sources */,
 				28118B911FB9D5B000C72430 /* AboutCell.swift in Sources */,
 				28118B951FB9E2EA00C72430 /* UserDefaultsStore.swift in Sources */,
 				28CD6C661FB6A92400B9CBCD /* HostViewController.swift in Sources */,

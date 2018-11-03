@@ -12,16 +12,19 @@ class EventCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel! {
         didSet {
             timeLabel.textColor = UIColor.white
+            timeLabel.font = UIFont.logoG.medium.font(13)
         }
     }
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             titleLabel.textColor = UIColor.themeBlack
+            titleLabel.font = UIFont.logoG.extra.font(28)
         }
     }
     @IBOutlet weak var detailLabel: UILabel! {
         didSet {
             detailLabel.textColor = UIColor.gray
+            detailLabel.font = UIFont.logoG.medium.font(15)
         }
     }
     

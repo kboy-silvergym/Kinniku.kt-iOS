@@ -50,8 +50,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         cell.selectionStyle = .none
         cell.textLabel?.text = menuStrings[indexPath.row]
-        cell.textLabel?.textColor = UIColor.themePurple
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        cell.textLabel?.textColor = UIColor.themeNavy
+        cell.textLabel?.font = UIFont.logoG.extra.font(24)
         return cell
     }
     

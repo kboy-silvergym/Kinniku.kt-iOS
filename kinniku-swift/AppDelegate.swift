@@ -41,6 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = storybord.instantiateInitialViewController()
         window!.makeKeyAndVisible()
         
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.font: UIFont.logoG.extra.font(20),
+            NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+        ]
+        if #available(iOS 11.0, *) {
+            UINavigationBar.appearance().largeTitleTextAttributes = [
+                NSAttributedStringKey.font: UIFont.logoG.extra.font(34),
+                NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+            ]
+        }
         return true
     }
 
