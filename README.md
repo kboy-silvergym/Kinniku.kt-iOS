@@ -5,7 +5,7 @@
 Comming Soon...
 
 # ver. 1.0 筋肉.swift
-<img src="https://user-images.githubusercontent.com/17683316/42747264-ab4b03e0-8916-11e8-8448-1c133e57b4c3.png" width=400>
+<img src="kinniku-swift-images/kinniku-swift-logo.png" width=300>
 
 ## About
 The developer conference for Muscle Engineers who are good at swift development.
