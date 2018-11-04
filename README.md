@@ -3,8 +3,6 @@
 # ver.2.0 筋肉.kt
 <img src="kinniku-kt-images/kinniku-kt-logo.png" width=150>
 
-Comming Soon...
-
 ## About
 The developer conference for Muscle Engineers who are good at Kotlin development.
 
