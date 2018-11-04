@@ -10,17 +10,38 @@ import UIKit
 import SDWebImage
 
 class TweetCell: UITableViewCell {
-    @IBOutlet weak var userNameText: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var tweetText: UILabel!
-    @IBOutlet weak var dateText: UILabel!
     @IBOutlet weak var contentImageView: UIImageView!
-    @IBOutlet weak var screenNameButton: UIButton!
+    @IBOutlet weak var userNameText: UILabel! {
+        didSet {
+            userNameText.textColor = .themeBlack
+            userNameText.font = UIFont.logoG.extra.font(17)
+        }
+    }
+    @IBOutlet weak var tweetText: UILabel! {
+        didSet {
+            tweetText.textColor = .themeBlack
+            tweetText.font = UIFont.logoG.medium.font(17)
+        }
+    }
+    @IBOutlet weak var dateText: UILabel! {
+        didSet {
+            dateText.textColor = .themeBlack
+            dateText.font = UIFont.logoG.medium.font(11)
+        }
+    }
+    @IBOutlet weak var screenNameButton: UIButton! {
+        didSet {
+            screenNameButton.setTitleColor(.themeNavy, for: .normal)
+            screenNameButton.titleLabel?.font = UIFont.logoG.medium.font(11)
+        }
+    }
     
     var tweet: Tweet? {
         didSet{
             guard let tweet = tweet else { return }
             tweetText.text = tweet.text
+            tweetText.setLineSpacing(lineSpacing: 6)
             
             // 3日前などのフォーマットに変換
             let dateSpan = tweet

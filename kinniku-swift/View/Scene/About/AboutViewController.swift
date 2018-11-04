@@ -24,7 +24,7 @@ class AboutViewController: UIViewController {
     }
     
     private func getRequest() -> URLRequest {
-        let url = URL(string: "https://kinniku-swift.connpass.com/event/69438/")
+        let url = URL(string: "https://kinniku-swift.connpass.com/event/99895/")
         let request = URLRequest(url: url!)
         return request
     }

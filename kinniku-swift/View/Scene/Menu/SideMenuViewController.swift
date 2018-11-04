@@ -10,7 +10,7 @@ import UIKit
 import InteractiveSideMenu
 
 class SideMenuViewController: MenuViewController {
-    let menuStrings: [String] = ["筋肉.swift",
+    let menuStrings: [String] = ["筋肉.kt",
                                  "タイムライン",
                                  "スケジュール",
                                  "スピーカー",
@@ -18,6 +18,8 @@ class SideMenuViewController: MenuViewController {
                                  "このアプリについて"]
     
     @IBOutlet weak var tableView: UITableView!
+    
+    private lazy var feedback = UISelectionFeedbackGenerator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,8 @@ class SideMenuViewController: MenuViewController {
         
         let nib = UINib(nibName: String(describing: AboutCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: String(describing: AboutCell.self))
+        
+        feedback.prepare()
     }
 }
 
@@ -50,8 +54,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
         cell.selectionStyle = .none
         cell.textLabel?.text = menuStrings[indexPath.row]
-        cell.textLabel?.textColor = UIColor.theme
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        cell.textLabel?.textColor = UIColor.themeNavy
+        cell.textLabel?.font = UIFont.logoG.extra.font(24)
         return cell
     }
     
@@ -61,6 +65,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         let target = menuContainer.contentViewControllers[indexPath.row]
         menuContainer.selectContentViewController(target)
         menuContainer.hideSideMenu()
+        
+        feedback.selectionChanged()
     }
     
 }

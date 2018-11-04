@@ -9,13 +9,24 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var twitterLoginButton: UIButton! {
+        didSet {
+            twitterLoginButton.titleLabel?.font = UIFont.logoG.extra.font(17)
+        }
+    }
+    @IBOutlet weak var skipButton: UIButton! {
+        didSet {
+            skipButton.setTitleColor(.themeNavy, for: .normal)
+            skipButton.titleLabel?.font = UIFont.logoG.extra.font(17)
+        }
+    }
+    
     @IBAction func loginButtonTapped(_ sender: Any) {
         AuthAPI.login({ error in
             UserDefaultsStore.shared.saveRegister()
             self.gotoMain()
         })
     }
-    
     @IBAction func skipButtonTapped(_ sender: Any) {
         self.gotoMain()
     }

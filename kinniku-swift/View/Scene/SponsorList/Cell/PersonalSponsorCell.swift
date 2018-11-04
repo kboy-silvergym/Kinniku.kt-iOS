@@ -9,9 +9,17 @@
 import UIKit
 
 class PersonalSponsorCell: UITableViewCell {
-    
-    @IBOutlet weak var profileImage: UIImageView!
-    @IBOutlet weak var screenNameButton: UIButton!
+    @IBOutlet weak var profileImage: UIImageView! {
+        didSet {
+            profileImage.backgroundColor = .themeNavy
+        }
+    }
+    @IBOutlet weak var screenNameButton: UIButton! {
+        didSet {
+            screenNameButton.setTitleColor(.themeBlack, for: .normal)
+            screenNameButton.titleLabel?.font = UIFont.logoG.extra.font(15)
+        }
+    }
     
     var sponsor: PersonalSponsor? {
         didSet{
