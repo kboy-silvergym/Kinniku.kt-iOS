@@ -3,6 +3,8 @@
 # ver.2.0 筋肉.kt
 <img src="kinniku-kt-images/kinniku-kt-logo.png" width=150>
 
+[筋肉.kt - connpass](https://kinniku-swift.connpass.com/event/99895/)
+
 ## About
 The developer conference for Muscle Engineers who are good at Kotlin development.
 
