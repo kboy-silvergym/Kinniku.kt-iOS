@@ -5,7 +5,7 @@
 Comming Soon...
 
 # ver. 1.0 筋肉.swift
-<img src="kinniku-swift-images/kinniku-swift-logo.png" width=300>
+<img src="kinniku-swift-images/kinniku-swift-logo.png" width=150>
 
 ## About
 The developer conference for Muscle Engineers who are good at swift development.
