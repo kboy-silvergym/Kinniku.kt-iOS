@@ -19,6 +19,8 @@ class SideMenuViewController: MenuViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private lazy var feedback = UISelectionFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,8 @@ class SideMenuViewController: MenuViewController {
         
         let nib = UINib(nibName: String(describing: AboutCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: String(describing: AboutCell.self))
+        
+        feedback.prepare()
     }
 }
 
@@ -61,6 +65,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource  {
         let target = menuContainer.contentViewControllers[indexPath.row]
         menuContainer.selectContentViewController(target)
         menuContainer.hideSideMenu()
+        
+        feedback.selectionChanged()
     }
     
 }

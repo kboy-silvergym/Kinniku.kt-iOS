@@ -33,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="-2039" y="983"/>
         </scene>
-        <!--スポンサー-->
+        <!--スポンサー様-->
         <scene sceneID="QDD-R8-N1i">
             <objects>
                 <viewController storyboardIdentifier="SponsorListViewController" id="RYh-AB-3SX" customClass="SponsorListViewController" customModule="kinniku_swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rZF-BK-sSy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="スポンサー" id="paa-cb-0ul">
+                    <navigationItem key="navigationItem" title="スポンサー様" id="paa-cb-0ul">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="bookmarks" id="Cei-cL-tZO">
                             <connections>
                                 <action selector="menuButtonTapped:" destination="RYh-AB-3SX" id="JIH-Bd-Jfm"/>

@@ -10,6 +10,15 @@ import UIKit
 import InteractiveSideMenu
 
 class SpeakerListViewController: UIViewController {
+    @IBOutlet weak var segmentControl: UISegmentedControl! {
+        didSet {
+            segmentControl.setTitleTextAttributes([
+                NSAttributedStringKey.font: UIFont.logoG.medium.font(15),
+                NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+                ]
+                , for: .normal)
+        }
+    }
     @IBOutlet weak var tableView: UITableView!
     
     var speakers: [Speaker] = []
@@ -21,6 +30,8 @@ class SpeakerListViewController: UIViewController {
     var level2Done = false
     var level3Done = false
     
+    private lazy var feedback = UINotificationFeedbackGenerator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +42,9 @@ class SpeakerListViewController: UIViewController {
         let nib = UINib(nibName: String(describing: SpeakerCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: String(describing: SpeakerCell.self))
         
+        let nib2 = UINib(nibName: String(describing: ComingSoonCell.self), bundle: nil)
+        tableView.register(nib2, forCellReuseIdentifier: String(describing: ComingSoonCell.self))
+        
         getSpeakerRealtime({ error, speakers in
             if let error = error {
                 print(error.localizedDescription)
@@ -39,6 +53,8 @@ class SpeakerListViewController: UIViewController {
             self.speakers = speakers
             self.reloadData()
         })
+        
+        feedback.prepare()
     }
     
     // ソートしてリロード
@@ -76,10 +92,17 @@ class SpeakerListViewController: UIViewController {
 extension SpeakerListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if speakers.count == 0 {
+            return 1
+        }
         return speakers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if speakers.count == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ComingSoonCell.self), for: indexPath)
+            return cell
+        }
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SpeakerCell.self), for: indexPath) as! SpeakerCell
         cell.speaker = speakers[indexPath.row]
         cell.votedEvent = {
@@ -89,14 +112,20 @@ extension SpeakerListViewController: UITableViewDataSource {
                 let speaker = self.speakers[indexPath.row]
                 let currentPoint = speaker.point
                 self.voteSpeaker(id: speaker.id, newCount: currentPoint+1)
+                
+                self.feedback.notificationOccurred(.success)
             }, level2Action: {
                 let speaker = self.speakers[indexPath.row]
                 let currentPoint = self.speakers[indexPath.row].point
                 self.voteSpeaker(id: speaker.id, newCount: currentPoint+2)
+                
+                self.feedback.notificationOccurred(.success)
             }, level3Action: {
                 let speaker = self.speakers[indexPath.row]
                 let currentPoint = speaker.point
                 self.voteSpeaker(id: speaker.id, newCount: currentPoint+3)
+                
+                self.feedback.notificationOccurred(.success)
             })
         }
         return cell

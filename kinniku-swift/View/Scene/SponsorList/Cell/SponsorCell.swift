@@ -10,9 +10,24 @@ import UIKit
 
 class SponsorCell: UITableViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var sponcerTypeLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var sponcerTypeLabel: UILabel! {
+        didSet {
+            sponcerTypeLabel.textColor = UIColor.themeNavy
+            sponcerTypeLabel.font = UIFont.logoG.medium.font(13)
+        }
+    }
+    @IBOutlet weak var nameLabel: UILabel! {
+        didSet {
+            nameLabel.textColor = UIColor.themeBlack
+            nameLabel.font = UIFont.logoG.extra.font(21)
+        }
+    }
+    @IBOutlet weak var descriptionLabel: UILabel! {
+        didSet {
+            descriptionLabel.textColor = UIColor.themeBlack
+            descriptionLabel.font = UIFont.logoG.medium.font(13)
+        }
+    }
     
     var sponsor: Sponsor? {
         didSet{

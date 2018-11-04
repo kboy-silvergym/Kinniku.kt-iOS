@@ -48,6 +48,8 @@ extension AcknowledgementsViewController: UITableViewDataSource {
         
         if let item = self.items[indexPath.row] as? [String : String] {
             cell.textLabel?.text = item["Title"]
+            cell.textLabel?.font = UIFont.logoG.medium.font(17)
+            cell.textLabel?.textColor = UIColor.themeBlack
         }
         return cell
     }

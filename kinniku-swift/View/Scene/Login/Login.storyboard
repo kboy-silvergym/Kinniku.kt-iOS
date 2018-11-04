@@ -50,7 +50,7 @@
                                 <rect key="frame" x="141.5" y="532.5" width="92" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="いますぐ使う">
-                                    <color key="titleColor" red="0.28627450980392155" green="0.19607843137254902" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.20392156859999999" green="0.43137254899999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="skipButtonTapped:" destination="fMA-DX-5bR" eventType="touchUpInside" id="0yT-cS-xyY"/>
@@ -70,6 +70,10 @@
                         <viewLayoutGuide key="safeArea" id="FdW-WA-PCV"/>
                     </view>
                     <navigationItem key="navigationItem" id="ijL-9U-pzm"/>
+                    <connections>
+                        <outlet property="skipButton" destination="Ybq-Al-Z62" id="J59-0f-gmh"/>
+                        <outlet property="twitterLoginButton" destination="cPT-oc-C18" id="4AQ-at-w4W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ho8-OS-rXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

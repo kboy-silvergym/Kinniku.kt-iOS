@@ -41,6 +41,8 @@ extension AboutAppViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
         cell.textLabel?.text = menuString[indexPath.row]
+        cell.textLabel?.font = UIFont.logoG.medium.font(17)
+        cell.textLabel?.textColor = UIColor.themeBlack
         
         if menuString[indexPath.row] == "バージョン" {
             if let verString: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
