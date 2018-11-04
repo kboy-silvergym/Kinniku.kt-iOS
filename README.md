@@ -21,7 +21,7 @@ The developer conference for Muscle Engineers who are good at swift development.
 |:--:|:--:|:--:|:--:|
 |<img src="kinniku-swift-images/screen1.png">|<img src="kinniku-swift-images/screen3.png">|<img src="kinniku-swift-images/screen2.png">|<img src="kinniku-swift-images/screen4.png">|
 
-|Speaker List|Sponcer List|About|Info|
+|Speaker List|Sponsor List|About|Info|
 |:--:|:--:|:--:|:--:|
 |<img src="kinniku-swift-images/screen5.png">|<img src="kinniku-swift-images/screen6.png ">|<img src="kinniku-swift-images/screen7.png">|<img src="kinniku-swift-images/screen8.png">|
 
