@@ -1,10 +1,10 @@
 
 
-# ver 2.0 筋肉.kt
+# ver.2.0 筋肉.kt
 
 Comming Soon...
 
-# ver. 1.0 筋肉.swift
+# ver.1.0 筋肉.swift
 <img src="kinniku-swift-images/kinniku-swift-logo.png" width=150>
 
 ## About
