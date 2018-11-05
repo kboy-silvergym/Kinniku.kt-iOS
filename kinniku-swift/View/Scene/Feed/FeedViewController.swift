@@ -38,7 +38,11 @@ class FeedViewController: UIViewController {
     
     func getTweet(){
         TwitterAPI.getTweet({ results in
-            self.tweets = results?.tweets ?? []
+            let tweets = results?.tweets ?? []
+            let filtered = tweets.filter({
+                return !$0.text.contains("Android")
+            })
+            self.tweets = filtered
             self.refreshControl?.endRefreshing()
             self.tableView.reloadData()
         })
