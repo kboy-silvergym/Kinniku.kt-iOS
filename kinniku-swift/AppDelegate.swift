@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
         
@@ -42,13 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.makeKeyAndVisible()
         
         UINavigationBar.appearance().titleTextAttributes = [
-            NSAttributedStringKey.font: UIFont.logoG.extra.font(20),
-            NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+            NSAttributedString.Key.font: UIFont.logoG.extra.font(20),
+            NSAttributedString.Key.foregroundColor: UIColor.themeNavy
         ]
         if #available(iOS 11.0, *) {
             UINavigationBar.appearance().largeTitleTextAttributes = [
-                NSAttributedStringKey.font: UIFont.logoG.extra.font(34),
-                NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+                NSAttributedString.Key.font: UIFont.logoG.extra.font(34),
+                NSAttributedString.Key.foregroundColor: UIColor.themeNavy
             ]
         }
         return true
@@ -74,7 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         
         let urlString = url.absoluteString
         if urlString.contains("twitter") {

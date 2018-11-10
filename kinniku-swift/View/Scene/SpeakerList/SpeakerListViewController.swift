@@ -13,8 +13,8 @@ class SpeakerListViewController: UIViewController {
     @IBOutlet weak var segmentControl: UISegmentedControl! {
         didSet {
             segmentControl.setTitleTextAttributes([
-                NSAttributedStringKey.font: UIFont.logoG.medium.font(15),
-                NSAttributedStringKey.foregroundColor: UIColor.themeNavy
+                NSAttributedString.Key.font: UIFont.logoG.medium.font(15),
+                NSAttributedString.Key.foregroundColor: UIColor.themeNavy
                 ]
                 , for: .normal)
         }
