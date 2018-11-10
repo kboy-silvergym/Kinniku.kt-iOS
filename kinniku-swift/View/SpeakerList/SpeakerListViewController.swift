@@ -38,12 +38,8 @@ class SpeakerListViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
-        
-        let nib = UINib(nibName: String(describing: SpeakerCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: String(describing: SpeakerCell.self))
-        
-        let nib2 = UINib(nibName: String(describing: ComingSoonCell.self), bundle: nil)
-        tableView.register(nib2, forCellReuseIdentifier: String(describing: ComingSoonCell.self))
+        tableView.registerNib(SpeakerCell.self)
+        tableView.registerNib(ComingSoonCell.self)
         
         getSpeakerRealtime({ error, speakers in
             if let error = error {

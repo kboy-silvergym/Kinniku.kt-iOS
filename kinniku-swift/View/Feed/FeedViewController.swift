@@ -19,15 +19,13 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.tableFooterView = UIView()
-        
         refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(type(of: self).refresh), for: .valueChanged)
-        tableView.refreshControl = refreshControl
         
-        let nib = UINib(nibName: String(describing: TweetCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: String(describing: TweetCell.self))
+        tableView.refreshControl = refreshControl
+        tableView.registerNib(TweetCell.self)
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
         
         getTweet()
     }

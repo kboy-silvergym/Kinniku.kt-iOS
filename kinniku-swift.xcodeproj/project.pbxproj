@@ -13,23 +13,23 @@
 		280D80B5218DE2ED008FF06E /* LogoGStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B0218DE2ED008FF06E /* LogoGStd-Medium.otf */; };
 		280D80B6218DE2ED008FF06E /* LogoGStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */; };
 		280D80B7218DE2ED008FF06E /* LogoGStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */; };
-		280D80B9218DE3A7008FF06E /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80B8218DE3A7008FF06E /* FontExtension.swift */; };
-		280D80BB218DEC93008FF06E /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80BA218DEC93008FF06E /* UILabelExtension.swift */; };
+		280D80B9218DE3A7008FF06E /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80B8218DE3A7008FF06E /* UIFont+Extension.swift */; };
+		280D80BB218DEC93008FF06E /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280D80BA218DEC93008FF06E /* UILabel+Extensions.swift */; };
 		28118A4A1FB76CE800C72430 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118A491FB76CE800C72430 /* Login.storyboard */; };
 		28118B3A1FB8022F00C72430 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28118B391FB8022F00C72430 /* TweetCell.xib */; };
 		28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3B1FB8025700C72430 /* TweetCell.swift */; };
-		28118B3F1FB8038D00C72430 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3E1FB8038D00C72430 /* DateExtension.swift */; };
+		28118B3F1FB8038D00C72430 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B3E1FB8038D00C72430 /* Date+Extensions.swift */; };
 		28118B5D1FB84B7F00C72430 /* TweetMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B5C1FB84B7F00C72430 /* TweetMedia.swift */; };
 		28118B611FB87E5800C72430 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118B601FB87E5800C72430 /* Feed.storyboard */; };
 		28118B631FB8AA2C00C72430 /* InteractiveNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B621FB8AA2C00C72430 /* InteractiveNavigationController.swift */; };
-		28118B651FB8AC7000C72430 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B641FB8AC7000C72430 /* ColorExtension.swift */; };
+		28118B651FB8AC7000C72430 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B641FB8AC7000C72430 /* UIColor+Extensions.swift */; };
 		28118B671FB8C35400C72430 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B661FB8C35400C72430 /* Results.swift */; };
 		28118B741FB8CF0900C72430 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B731FB8CF0900C72430 /* ScheduleViewController.swift */; };
 		28118B761FB8CF2000C72430 /* SponsorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B751FB8CF2000C72430 /* SponsorListViewController.swift */; };
 		28118B781FB8CF3200C72430 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B771FB8CF3200C72430 /* AboutAppViewController.swift */; };
 		28118B7A1FB9AF4500C72430 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B791FB9AF4500C72430 /* AuthAPI.swift */; };
 		28118B7C1FB9B57900C72430 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28118B7B1FB9B57900C72430 /* GoogleService-Info.plist */; };
-		28118B7E1FB9BF1000C72430 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B7D1FB9BF1000C72430 /* StringExtension.swift */; };
+		28118B7E1FB9BF1000C72430 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28118B7D1FB9BF1000C72430 /* String+Extensions.swift */; };
 		28118B801FB9C8B800C72430 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118B7F1FB9C8B800C72430 /* About.storyboard */; };
 		28118B821FB9C8C700C72430 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118B811FB9C8C700C72430 /* Schedule.storyboard */; };
 		28118B841FB9C8D100C72430 /* SpeakerList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28118B831FB9C8D100C72430 /* SpeakerList.storyboard */; };
@@ -49,6 +49,7 @@
 		284074A21FB7637E0028CA15 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074A11FB7637E0028CA15 /* Tweet.swift */; };
 		284074A41FB763B10028CA15 /* TweetUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074A31FB763B10028CA15 /* TweetUser.swift */; };
 		284074AD1FB766780028CA15 /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284074AC1FB766780028CA15 /* AppConst.swift */; };
+		288D4F6221972B710000F9E8 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288D4F6121972B710000F9E8 /* UITableView+Extensions.swift */; };
 		28CD6C641FB6A92400B9CBCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */; };
 		28CD6C661FB6A92400B9CBCD /* HostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CD6C651FB6A92400B9CBCD /* HostViewController.swift */; };
 		28CD6C691FB6A92400B9CBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CD6C671FB6A92400B9CBCD /* Main.storyboard */; };
@@ -94,23 +95,23 @@
 		280D80B0218DE2ED008FF06E /* LogoGStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Medium.otf"; sourceTree = "<group>"; };
 		280D80B1218DE2ED008FF06E /* LogoGStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Bold.otf"; sourceTree = "<group>"; };
 		280D80B2218DE2ED008FF06E /* LogoGStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LogoGStd-Light.otf"; sourceTree = "<group>"; };
-		280D80B8218DE3A7008FF06E /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
-		280D80BA218DEC93008FF06E /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		280D80B8218DE3A7008FF06E /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		280D80BA218DEC93008FF06E /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		28118A491FB76CE800C72430 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		28118B391FB8022F00C72430 /* TweetCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
 		28118B3B1FB8025700C72430 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
-		28118B3E1FB8038D00C72430 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		28118B3E1FB8038D00C72430 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		28118B5C1FB84B7F00C72430 /* TweetMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetMedia.swift; sourceTree = "<group>"; };
 		28118B601FB87E5800C72430 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		28118B621FB8AA2C00C72430 /* InteractiveNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveNavigationController.swift; sourceTree = "<group>"; };
-		28118B641FB8AC7000C72430 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		28118B641FB8AC7000C72430 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		28118B661FB8C35400C72430 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		28118B731FB8CF0900C72430 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		28118B751FB8CF2000C72430 /* SponsorListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorListViewController.swift; sourceTree = "<group>"; };
 		28118B771FB8CF3200C72430 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		28118B791FB9AF4500C72430 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		28118B7B1FB9B57900C72430 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		28118B7D1FB9BF1000C72430 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		28118B7D1FB9BF1000C72430 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		28118B7F1FB9C8B800C72430 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		28118B811FB9C8C700C72430 /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		28118B831FB9C8D100C72430 /* SpeakerList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeakerList.storyboard; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		284074A31FB763B10028CA15 /* TweetUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetUser.swift; sourceTree = "<group>"; };
 		284074AA1FB765AA0028CA15 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		284074AC1FB766780028CA15 /* AppConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConst.swift; sourceTree = "<group>"; };
+		288D4F6121972B710000F9E8 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		28C2071B1FC45BEB0067ACC8 /* kinniku-swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "kinniku-swift.entitlements"; sourceTree = "<group>"; };
 		28CD6C601FB6A92400B9CBCD /* kinniku-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kinniku-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CD6C631FB6A92400B9CBCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -198,29 +200,14 @@
 		28118B3D1FB8037500C72430 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				28118B3E1FB8038D00C72430 /* DateExtension.swift */,
-				28118B641FB8AC7000C72430 /* ColorExtension.swift */,
-				28118B7D1FB9BF1000C72430 /* StringExtension.swift */,
-				280D80B8218DE3A7008FF06E /* FontExtension.swift */,
-				280D80BA218DEC93008FF06E /* UILabelExtension.swift */,
+				28118B3E1FB8038D00C72430 /* Date+Extensions.swift */,
+				28118B641FB8AC7000C72430 /* UIColor+Extensions.swift */,
+				28118B7D1FB9BF1000C72430 /* String+Extensions.swift */,
+				280D80B8218DE3A7008FF06E /* UIFont+Extension.swift */,
+				280D80BA218DEC93008FF06E /* UILabel+Extensions.swift */,
+				288D4F6121972B710000F9E8 /* UITableView+Extensions.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		28118B681FB8CA0900C72430 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				28118B6A1FB8CA3500C72430 /* Login */,
-				28118B6D1FB8CAA200C72430 /* Menu */,
-				28118B6C1FB8CA9900C72430 /* Host */,
-				28118B6F1FB8CACC00C72430 /* About */,
-				28118B6B1FB8CA4300C72430 /* Feed */,
-				28118B721FB8CEE600C72430 /* Schedule */,
-				28118B6E1FB8CAB400C72430 /* SpeakerList */,
-				28118B711FB8CECE00C72430 /* SponsorList */,
-				28118B701FB8CEB100C72430 /* AboutApp */,
-			);
-			path = Scene;
 			sourceTree = "<group>";
 		};
 		28118B691FB8CA1900C72430 /* Common */ = {
@@ -385,7 +372,15 @@
 			isa = PBXGroup;
 			children = (
 				28118B691FB8CA1900C72430 /* Common */,
-				28118B681FB8CA0900C72430 /* Scene */,
+				28118B6A1FB8CA3500C72430 /* Login */,
+				28118B6D1FB8CAA200C72430 /* Menu */,
+				28118B6C1FB8CA9900C72430 /* Host */,
+				28118B6F1FB8CACC00C72430 /* About */,
+				28118B6B1FB8CA4300C72430 /* Feed */,
+				28118B721FB8CEE600C72430 /* Schedule */,
+				28118B6E1FB8CAB400C72430 /* SpeakerList */,
+				28118B711FB8CECE00C72430 /* SponsorList */,
+				28118B701FB8CEB100C72430 /* AboutApp */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -689,7 +684,7 @@
 				284074991FB730DB0028CA15 /* SpeakerListViewController.swift in Sources */,
 				28118B741FB8CF0900C72430 /* ScheduleViewController.swift in Sources */,
 				284074A21FB7637E0028CA15 /* Tweet.swift in Sources */,
-				280D80B9218DE3A7008FF06E /* FontExtension.swift in Sources */,
+				280D80B9218DE3A7008FF06E /* UIFont+Extension.swift in Sources */,
 				28118B911FB9D5B000C72430 /* AboutCell.swift in Sources */,
 				28118B951FB9E2EA00C72430 /* UserDefaultsStore.swift in Sources */,
 				28CD6C661FB6A92400B9CBCD /* HostViewController.swift in Sources */,
@@ -708,19 +703,20 @@
 				28118B7A1FB9AF4500C72430 /* AuthAPI.swift in Sources */,
 				28118B8C1FB9D32A00C72430 /* ComingSoonCell.swift in Sources */,
 				28F7D2AE1FC9494F009D0AF2 /* Speaker.swift in Sources */,
-				280D80BB218DEC93008FF06E /* UILabelExtension.swift in Sources */,
+				280D80BB218DEC93008FF06E /* UILabel+Extensions.swift in Sources */,
 				284074AD1FB766780028CA15 /* AppConst.swift in Sources */,
 				28F7D2C01FC96AC9009D0AF2 /* EventCell.swift in Sources */,
-				28118B651FB8AC7000C72430 /* ColorExtension.swift in Sources */,
+				28118B651FB8AC7000C72430 /* UIColor+Extensions.swift in Sources */,
 				28F7D2B61FC957AA009D0AF2 /* SpeakerCell.swift in Sources */,
-				28118B3F1FB8038D00C72430 /* DateExtension.swift in Sources */,
+				28118B3F1FB8038D00C72430 /* Date+Extensions.swift in Sources */,
 				28F7D2AC1FC944FB009D0AF2 /* CloudFirestore.swift in Sources */,
 				28118B3C1FB8025700C72430 /* TweetCell.swift in Sources */,
 				28FFDF841FC308790063CCFB /* LicenseViewController.swift in Sources */,
 				2840749F1FB73DF60028CA15 /* TwitterAPI.swift in Sources */,
+				288D4F6221972B710000F9E8 /* UITableView+Extensions.swift in Sources */,
 				28118B781FB8CF3200C72430 /* AboutAppViewController.swift in Sources */,
 				28F7D2BA1FC968F4009D0AF2 /* SponsorCell.swift in Sources */,
-				28118B7E1FB9BF1000C72430 /* StringExtension.swift in Sources */,
+				28118B7E1FB9BF1000C72430 /* String+Extensions.swift in Sources */,
 				28CD6C641FB6A92400B9CBCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

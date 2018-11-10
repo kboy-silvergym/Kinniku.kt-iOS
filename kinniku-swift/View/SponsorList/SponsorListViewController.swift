@@ -27,12 +27,9 @@ class SponsorListViewController: UIViewController {
         tableView.backgroundView = UIView()
         tableView.backgroundColor = .clear
         
-        let nib = UINib(nibName: String(describing: SponsorCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: String(describing: SponsorCell.self))
-        let nib2 = UINib(nibName: String(describing: PersonalSponsorCell.self), bundle: nil)
-        tableView.register(nib2, forCellReuseIdentifier: String(describing: PersonalSponsorCell.self))
-        let header = UINib(nibName: String(describing: SponsorHeader.self), bundle: nil)
-        tableView.register(header, forCellReuseIdentifier: String(describing: SponsorHeader.self))
+        tableView.registerNib(SponsorCell.self)
+        tableView.registerNib(PersonalSponsorCell.self)
+        tableView.registerNib(SponsorHeader.self)
         
         getSponsor()
     }

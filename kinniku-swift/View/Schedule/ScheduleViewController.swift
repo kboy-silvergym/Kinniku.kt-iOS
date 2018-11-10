@@ -20,9 +20,7 @@ class ScheduleViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-
-        let nib = UINib(nibName: String(describing: EventCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: String(describing: EventCell.self))
+        tableView.registerNib(EventCell.self)
         
         CloudFirestore().getEvent({ error, events in
             if let error = error {

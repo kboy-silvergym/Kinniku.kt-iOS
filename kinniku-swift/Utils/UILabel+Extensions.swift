@@ -9,7 +9,6 @@
 import UIKit
 
 extension UILabel {
-    
     func setLineSpacing(lineSpacing: CGFloat = 0.0, lineHeightMultiple: CGFloat = 0.0) {
         
         guard let labelText = self.text else { return }

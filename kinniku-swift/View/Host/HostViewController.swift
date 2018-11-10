@@ -16,7 +16,7 @@ class HostViewController: MenuContainerViewController {
         super.viewDidLoad()
         
         // viewControllerセットアップ
-        self.menuViewController = self.storyboard!.instantiateViewController(withIdentifier: "SideMenuViewController") as! MenuViewController
+        self.menuViewController = self.storyboard!.instantiateViewController(withIdentifier: "SideMenuViewController") as? MenuViewController
         self.contentViewControllers = getContentControllers()
         self.selectContentViewController(contentViewControllers[1])
         

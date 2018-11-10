@@ -31,8 +31,7 @@ class SideMenuViewController: MenuViewController {
         self.tableView.delegate = self
         self.tableView.tableFooterView = UIView()
         
-        let nib = UINib(nibName: String(describing: AboutCell.self), bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: String(describing: AboutCell.self))
+        tableView.registerNib(AboutCell.self)
         
         feedback.prepare()
     }
